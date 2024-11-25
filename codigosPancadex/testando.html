@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Envolvido</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+    }
+
+    .form-container2 {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 400px; 
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 15px;
+      font-size: 22px; 
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px; 
+      margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="tel"], input[type="email"], input[type="password"], select {
+      width: 100%;
+      padding: 8px;
+      margin: 6px 0 15px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"], input[type="reset"] {
+      width: 48%;
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      background-color: orange;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover, input[type="reset"]:hover {
+      background-color: orange;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+
+    .back-button2 {
+      background-color: transparent;
+      border: none;
+      font-size: 14px;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .back-button2:hover {
+      color: #4CAF50;
+    }
+
+    .form-footer2 {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container2">
+    <!-- Formulários com logo dentro -->
+    <div class="form-container2">
+      <h1>Cadastro de Veículos</h1>
+      <form>
+        <label for="placaV">Placa do Veículo:</label>
+        <input type="text" id="plaquita" name="plaquita" placeholder="Digite a Placa do Veículo"><br>
+        <label for="modelo">Modelo do Veículo:</label>
+        <input type="text" id="modelV" name="modelV" placeholder="Digite o Modelo"><br>
+        <label for="Ano">Ano do Veículo:</label>
+        <input type="text" id="anito" name="anito" placeholder="Digite o Ano do Veículo"><br>
+        <label for="propietario">Propietário:</label>
+        <input type="text" id="propi" name="propi" placeholder="Digite o Nome do Propietário"><br>
+        
+        <div class="form-footer2">
+          <input type="reset" value="Voltar" class="back-button2">
+          <input type="submit" value="Próximo">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

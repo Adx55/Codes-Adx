@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pancadex</title>
+    <link rel="stylesheet" href="Pancadex.css">
+</head>
+<body>
+   
+
+    <div class="login-caixa">
+
+        <div class="loginCaixa-elementos">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Pancadex">
+            </div>
+            
+            <div class="login-text">
+                <span>Login</span>
+            </div>
+            
+            <form id="form-login">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required >
+
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required> 
+
+                <button type="submit" id="btn-login">Entrar</button>
+                <a href="#" id="forgot-password">Esqueceu a senha?</a>
+                <a href="#" id="Criar-conta">Criar conta</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="create-caixa">
+        <div class="elementos-create">
+            <div class="logo">
+                <img src="logo.png" alt="Logo Pancadex">
+            </div>
+
+            <div class="Create-text">
+                <span>Criar Conta</span>
+            </div>
+
+            <form id="form-create">
+                <label for="nome">Seu nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome e sobrenome" required>
+
+                <label for="Cpf">Seu CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+
+                <label for="cll">Número de celular ou e-mail</label>
+                <input type="text" id="cll" name="cll" placeholder="Celular ou e-mail" required>
+
+                <label for="senha">Senha</label>
+                <input type="text" id="senha" name="senha" placeholder="Pelo menos 6 caracteres" required>
+
+                <label for="confSenha">Confirmar senha</label>
+                <input type="text" id="confSenha" name="confSenha" placeholder="Repita a senha " required>
+
+                <button type="submit" id="btn-create">Salvar Usuário</button>
+                <a href="#" id="Tconta">Já tem conta?</a>
+            </form>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <img src="imagem_2024-11-25_080855646-removebg-preview.png" alt="" width="150px"></div>
+        <div class="menu">
+          <a href="#cadastro">Cadastro de Acidente</a>
+          <a href="#artigos">Artigos</a>
+          <a href="#media">Média de Estragos</a>
+        </div>
+        <div class="account">
+          <img src="fotoPerfil.jpg" alt="Conta">
+          <span>Conta 00000000</span>
+          <a href="#sair" style="margin-left: 10px;">Sair</a>
+        </div>
+      </nav>
+    
+      <section class="banner">
+        <div class="banner-text">
+          <h1>Seja responsável</h1>
+          <p>Uma direção segura salva vidas! Respeite as leis de trânsito, evite o uso de celular e nunca dirija após consumir álcool. Sua atitude no volante faz a diferença.</p>
+        </div>
+        <div class="banner-image">
+          <img src="acidente.jpg" alt="Carro Acidentado" >
+        </div>
+      </section>
+    
+      <section class="testimonials">
+        <h2>Quem já usou, confia!</h2>
+        <div class="testimonial-cards">
+          <div class="card">
+            <img src="Jaine.jpg" alt="Avatar Jaine">
+            <h3>Jaine</h3>
+            <span>Sergipe</span>
+            <p>Nunca pensei que seria tão simples registrar um acidente. Recomendo!</p>
+          </div>
+          <div class="card">
+            <img src="marcos.jpg" alt="Avatar Marcos">
+            <h3>Marcos</h3>
+            <span>São Paulo</span>
+            <p>O atendimento foi surpreendente, tanto na hora da solicitação quanto pelo serviço prestado.</p>
+          </div>
+          <div class="card">
+            <img src="virginia.jpg" alt="Avatar Virgínia">
+            <h3>Virgínia</h3>
+            <span>Minas Gerais</span>
+            <p>Perfeito para emergências. Foi um alívio poder resolver tudo pelo app.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+       
+        <div class="form-container">
+          <div class="logo-container">
+            <img src="logo.png" alt="Logo" class="logoEnvol"> 
+          </div>
+          <h1>Cadastro de Envolvido</h1>
+          <form>
+            <label for="nome">Nome do Envolvido:</label>
+            <input type="text" id="nome" name="nome" placeholder="Coloque o Nome do Envolvido"><br>
+            <label for="telefone">Telefone do Envolvido:</label>
+            <select id="ddi" name="ddi">
+              <option value="+55">+55</option>
+            </select>
+            <input type="tel" id="telefone" name="telefone" placeholder="Digite o Número"><br>
+            <label for="email">Email do Envolvido:</label>
+            <input type="email" id="email" name="email" placeholder="Coloque o Email do Envolvido"><br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Pelo menos 6 caracteres"><br>
+            <label for="confirmar_senha">Confirmar Senha:</label>
+            <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Insira a senha nova mais uma vez"><br>
+            
+            <div class="form-footer">
+              <input type="reset" value="Voltar" class="back-button">
+              <input type="submit" value="Próximo">
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="container2">
+        <!-- Formulários com logo dentro -->
+        <div class="form-container2">
+          <h1>Cadastro de Veículos</h1>
+          <form>
+            <label for="placaV">Placa do Veículo:</label>
+            <input type="text" id="plaquita" name="plaquita" placeholder="Digite a Placa do Veículo"><br>
+            <label for="modelo">Modelo do Veículo:</label>
+            <input type="text" id="modelV" name="modelV" placeholder="Digite o Modelo"><br>
+            <label for="Ano">Ano do Veículo:</label>
+            <input type="text" id="anito" name="anito" placeholder="Digite o Ano do Veículo"><br>
+            <label for="propietario">Propietário:</label>
+            <input type="text" id="propi" name="propi" placeholder="Digite o Nome do Propietário"><br>
+            
+            <div class="form-footer2">
+              <input type="reset" value="Voltar" class="back-button2">
+              <input type="submit" value="Próximo">
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    <script src="pancadex.js"></script>
+</body>
+</html>
